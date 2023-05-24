@@ -15,7 +15,7 @@ class Clicker(threading.Thread):
         while True:
             if self.clicking:
                 self.mouse.click(Button.left, 1)
-            time.sleep(0.0025)
+            time.sleep(0.025)
 
     def toggle_clicking(self):
         self.clicking = not self.clicking
